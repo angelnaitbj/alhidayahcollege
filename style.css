@@ -151,10 +151,16 @@ nav ul li a:hover {
     background-repeat: no-repeat;
     background-attachment: fixed;
 
-    color: white;
+    color: rgb(50, 47, 47);
     padding: 20px;
 }
-
+.hero h1 {
+    color: black !important;
+}   
+.hero h1,
+.hero p {
+    color: hsla(133, 94%, 13%, 0.82);
+}
 .hero h1 {
     font-size: clamp(28px, 5vw, 48px);
 }
@@ -276,7 +282,7 @@ section:nth-of-type(odd) {
 .cta {
     text-align: center;
     background: var(--gradient-main);
-    color: white;
+    color: rgb(33, 142, 46);
     border-radius: 10px;
     padding: 40px 20px;
 }
@@ -284,7 +290,7 @@ section:nth-of-type(odd) {
 /* FOOTER */
 footer {
     background: var(--gradient-dark);
-    color: white;
+    color: rgb(132, 127, 127);
     text-align: center;
     padding: 30px;
 }
@@ -402,7 +408,7 @@ footer {
 /* Body Background */
 body {
     font-family: Arial, sans-serif;
-    background: #e0e0e0; /* darker professional grey */
+    background: #363333; /* darker professional grey */
     color: #111;
 }
 
@@ -415,7 +421,7 @@ header {
     align-items: center;
     background: #004d40;
     padding: 15px 30px;
-    color: #fff;
+    color: #636161;
 }
 
 header .logo {
@@ -435,7 +441,7 @@ nav ul {
 }
 
 nav a {
-    color: #fff;
+    color: #2f2b2b;
     text-decoration: none;
     font-weight: bold;
 }
@@ -449,7 +455,7 @@ nav a:hover {
    ========================= */
 .hero {
     background: linear-gradient(to right, #004d40, #00796b);
-    color: #fff;
+    color: #4b4141;
     text-align: center;
     padding: 80px 20px;
 }
@@ -477,7 +483,7 @@ nav a:hover {
    ========================= */
 section.full-width {
     width: 100%;
-    background: #e0e0e0;
+    background: #292828;
     padding: 60px 0;
 }
 
@@ -507,7 +513,7 @@ h3 {
    CARDS
    ========================= */
 .card {
-    background: #ffffff;
+    background: #262323;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.1);
