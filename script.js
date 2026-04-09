@@ -19,3 +19,21 @@ function showOnScroll() {
 
 window.addEventListener("scroll", showOnScroll);
 showOnScroll();
+function openPage() {
+    window.location.href = "learnmore.html";
+}
+document.addEventListener("DOMContentLoaded", function () {
+
+    const toggle = document.querySelector(".menu-toggle");
+    const menu = document.getElementById("menu");
+
+    toggle.addEventListener("click", function () {
+
+        // Only run on mobile screen
+        if (window.innerWidth <= 768) {
+            menu.classList.toggle("show");
+        }
+
+    });
+
+});
