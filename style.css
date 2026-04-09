@@ -605,3 +605,64 @@ footer {
     }
 
 }
+/* HIDE HAMBURGER ON DESKTOP */
+.menu-toggle {
+    display: none;
+    font-size: 26px;
+    cursor: pointer;
+}
+
+/* DESKTOP MENU */
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+/* ================= MOBILE ONLY ================= */
+@media (max-width: 768px) {
+
+    /* SHOW HAMBURGER */
+    .menu-toggle {
+        display: block;
+    }
+
+    /* HIDE MENU INITIALLY */
+    nav ul {
+        position: absolute;
+        top: 70px;
+        right: -100%;   /* hidden off screen */
+        width: 220px;
+
+        background: white;
+        flex-direction: column;
+
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+
+        transition: right 0.4s ease, opacity 0.3s;
+        opacity: 0;
+        padding: 15px 0;
+    }
+
+    /* SHOW MENU WHEN ACTIVE */
+    nav ul.show {
+        right: 10px;
+        opacity: 1;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    nav ul li a {
+        display: block;
+        padding: 10px;
+        color: black;
+    }
+
+    nav ul li a:hover {
+        background: var(--orange);
+        color: white;
+    }
+}
