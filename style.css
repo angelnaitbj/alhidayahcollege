@@ -136,6 +136,7 @@ nav ul li a:hover {
 ========================= */
 
 .hero {
+    width: 100%;
     min-height: 90vh;
     display: flex;
     justify-content: center;
@@ -620,7 +621,16 @@ nav ul {
 
 /* ================= MOBILE ONLY ================= */
 @media (max-width: 768px) {
+@media (max-width: 768px) {
 
+    nav ul {
+        position: fixed;   /* 🔥 important */
+        top: 70px;
+        right: -100%;
+        width: 220px;
+    }
+
+}
     /* SHOW HAMBURGER */
     .menu-toggle {
         display: block;
