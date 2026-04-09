@@ -1,0 +1,211 @@
+/* =========================
+   LEARN MORE PAGE STYLES
+   ========================= */
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Background */
+body {
+    font-family: Arial, sans-serif;
+    background: #e0e0e0; /* darker professional grey */
+    color: #111;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004d40;
+    padding: 15px 30px;
+    color: #fff;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    width: 40px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+/* =========================
+   HERO SECTION
+   ========================= */
+.hero {
+    background: linear-gradient(to right, #004d40, #00796b);
+    color: #fff;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 18px;
+}
+
+/* =========================
+   CONTAINER
+   ========================= */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* =========================
+   SECTION BACKGROUND
+   ========================= */
+section.full-width {
+    width: 100%;
+    background: #e0e0e0;
+    padding: 60px 0;
+}
+
+/* =========================
+   HEADINGS
+   ========================= */
+h2 {
+    margin-bottom: 15px;
+    color: #004d40;
+}
+
+h3 {
+    margin-bottom: 10px;
+    color: #00796b;
+}
+
+/* =========================
+   GRID LAYOUT
+   ========================= */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+/* =========================
+   CARDS
+   ========================= */
+.card {
+    background: #756b6b;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* =========================
+   LIST STYLING
+   ========================= */
+.card ul {
+    list-style: none;
+    padding: 0;
+}
+
+.card ul li {
+    margin: 8px 0;
+}
+
+/* =========================
+   LINKS
+   ========================= */
+.card a {
+    text-decoration: none;
+    color: #00796b;
+    font-weight: 600;
+}
+
+.card a:hover {
+    color: #ff9800;
+}
+
+/* =========================
+   BUTTONS
+   ========================= */
+.btn-primary {
+    background: #00796b;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #004d40;
+}
+
+/* =========================
+   CTA SECTION
+   ========================= */
+.cta {
+    background: #004d40;
+    color: #fff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+footer {
+    background: #00251a;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+}
+
+/* =========================
+   RESPONSIVE DESIGN
+   ========================= */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+}
