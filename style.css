@@ -162,11 +162,11 @@ nav ul li a:hover {
     padding: 20px;
 }
 .hero h1 {
-    color: black !important;
+    color: #f1ebeb !important;
 }   
 .hero h1,
 .hero p {
-    color: hsla(133, 94%, 13%, 0.82);
+    color: oklab(98.802% -0.0001 0.00399 / 0.788);
 }
 .hero h1 {
     font-size: clamp(28px, 5vw, 48px);
